@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee" version="5.0">
+    <servlet>
+        <servlet-name>ZakatPayment</servlet-name>
+        <servlet-class>com.zakatapp.ZakatPayment</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ZakatPayment</servlet-name>
+        <url-pattern>/ZakatPayment</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ZakatTracking</servlet-name>
+        <servlet-class>com.zakatapp.ZakatTracking</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ZakatTracking</servlet-name>
+        <url-pattern>/ZakatTracking</url-pattern>
+    </servlet-mapping>
+</web-app>

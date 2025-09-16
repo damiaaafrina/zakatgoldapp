@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zakat Estimator</title>
+    <style>
+        body {
+            background-color: #e8f5e9;
+            font-family: Arial, sans-serif;
+            color: #2e7d32;
+        }
+        form {
+            margin: auto;
+            width: 50%;
+            padding: 20px;
+            border: 2px solid #2e7d32;
+            border-radius: 10px;
+            background-color: #f1f8e9;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        input[type=submit] {
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center;">Zakat Payment Estimator</h2>
+    <form action="ZakatPayment" method="post">
+        <label>Gold Weight (grams):</label>
+        <input type="number" step="0.01" name="weight" required>
+
+        <label>Gold Type:</label>
+        <select name="type" required>
+            <option value="keep">Keep</option>
+            <option value="wear">Wear</option>
+        </select>
+
+        <label>Current Price per Gram (RM):</label>
+        <input type="number" step="0.01" name="price" required>
+
+        <input type="submit" value="Calculate Zakat">
+    </form>
+</body>
+</html>
